@@ -69,6 +69,7 @@ with open('input5.txt', 'r') as handler:
         for item in range(moveitems):
             crane.append(stack[fromstack][-1])
             stack[fromstack].pop()
+        # This line added for puzzle 2:
         for item in range(len(crane)):      
             stack[tostack].append(crane[-1])
             crane.pop()
