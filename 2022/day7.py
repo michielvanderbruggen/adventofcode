@@ -63,6 +63,3 @@ total2 = dirtotsorted[deldir]
 print()        
 print('Total score puzzle 1:', total1)
 print('Total score puzzle 2:', total2)
-# test = 95437
-# to low  1589708
-# to high 1916471
