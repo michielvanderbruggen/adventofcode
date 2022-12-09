@@ -1,12 +1,17 @@
 forrest = []
 counted = []
 
+for x in range(98, -1, -1):
+    print(x)
+exit()
+
+
 with open('input8.txt', 'r') as handler:
     for line in handler:
         forrest.append(line[:-1])
 
 # Left 2 right
-y=1
+
 hightree = int(forrest[y][0])
 for x in range(1, 98):
     treeloc = str(x) + ',' + str(y)
