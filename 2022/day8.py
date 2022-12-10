@@ -2,6 +2,7 @@
 # 99x99
 forrest = []
 counted = []
+highscore = 0
 
 with open('input8.txt', 'r') as handler:
     for line in handler:
@@ -14,7 +15,6 @@ for y in range(99):
         print()
         print('Checking loc:', treeloc)
         if x == 0 or y == 0 or x == 98 or y == 98:
-            # print('Tree', treeloc, 'is on the edge')
             counted.append(treeloc)
         else:
             # Look left
@@ -60,8 +60,3 @@ for y in range(99):
 print()        
 print('Total score puzzle 1:', len(counted))
 # print('Total score puzzle 2:', total2)
-# 1943 too high
-# 1935 too high
-# 1538 too low
-# 1887 is false
-# 1543
