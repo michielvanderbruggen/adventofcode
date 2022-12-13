@@ -17,7 +17,7 @@ def distance(head_, tail_):
             moves.append('down')
         return(moves)
 
-    if abs(head_[0] - tail_[0]) > 1 or abs(head_[1] - tail_[1] > 1):
+    if abs(head_[0] - tail_[0]) > 1 or abs(head_[1] - tail_[1]) > 1:
         print('Straight')
         if head_[0] - tail_[0] > 1:
             moves.append('right')
@@ -37,10 +37,10 @@ def position(tail_):
     string = str(tail_[0]) + ',' + str(tail_[1])
     return(string)
 
-with open('inputtest.txt', 'r') as handler:
+with open('input9.txt', 'r') as handler:
     for line in handler:
         dir = line[:1]
-        for steps in range(int(line[2:3])):
+        for steps in range(int(line[2:])):
             print()
             if dir == 'R': head[0] += 1
             if dir == 'L': head[0] -= 1
@@ -69,4 +69,4 @@ print()
 print('Total score puzzle 1:', len(visited))
 # print('Total score puzzle 2:', total2)
 
-# 2887 too low
+# 2887, 2999 too low
