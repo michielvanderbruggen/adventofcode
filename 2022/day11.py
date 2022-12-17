@@ -38,7 +38,6 @@ for i in range(len(input)):
         monkeys.append(monk(nr))
         print('monkey', nr)
         i += 1
-        #  li = list(string.split(" "))
         monkeys[nr].items = list(input[i][input[i].find(':')+2:-1].split(', '))
         print(monkeys[nr].items)
         i += 1
