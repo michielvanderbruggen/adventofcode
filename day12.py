@@ -27,4 +27,6 @@ for i in range(len(map)):
         E.append(y)
         print(E)
 
-for x in range(len)
+while True:
+    # Try up
+    
